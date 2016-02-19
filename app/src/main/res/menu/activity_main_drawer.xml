@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/information"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="授权信息" />
+        <item
+            android:id="@+id/manager"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="管理猿之家" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="联系我们" />
+        <item
+            android:id="@+id/about"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="关于" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="注销" />
+    </group>
+
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/AppTheme.Dark"/>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:padding_status="false"
+        app:padding_navigation="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fab_add"
+            app:menu_colorNormal="?colorAccent"
+            app:menu_colorPressed="?colorAccent"
+            app:menu_fab_size="normal" >
+
+        </com.github.clans.fab.FloatingActionButton>
+
+    </com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout>
+
+</com.jude.fitsystemwindowlayout.FitSystemWindowsRelativeLayout>
